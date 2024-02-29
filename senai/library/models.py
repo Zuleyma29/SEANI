@@ -66,9 +66,9 @@ class Question(models.Model):
         verbose_name = "Respuesta Correcta",
         max_length = 5)
 
-def __str__(self):
+    def __str__(self):
         return f"{ self.module } - {self.id}"
 
-class Meta:
+    class Meta:
         verbose_name= 'pregunta'
         verbose_name_plural='preguntas'
